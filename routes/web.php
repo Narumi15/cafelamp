@@ -13,7 +13,7 @@ use App\Http\Controllers\CashierController;
 use App\Http\Controllers\websiteController;
 
 //スタート画面
-Route::get('/', [StartUpController::class, 'index'])->name('startup');
+Route::get('/a', [StartUpController::class, 'index'])->name('startup');
 
 //選択
 Route::get('/mode', [ModeController::class, 'index'])->name('mode');
@@ -31,4 +31,4 @@ Route::get('/kitchen', [KitchenController::class, 'index'])->name('kitchen');
 Route::get('/cashier', [CashierController::class, 'index'])->name('cashier');
 
 //webサイト
-Route::get('/cafelamp', [websiteController::class, 'index'])->('cafelamp');
+Route::get('/', [websiteController::class, 'index'])->('cafelamp');

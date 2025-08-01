@@ -9,4 +9,5 @@
 <body>
     <p>test</p>
 </body>
+<script src="/js/cafelamp.js"></script>
 </html>

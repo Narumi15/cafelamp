@@ -10,6 +10,7 @@ use App\Http\Controllers\ManagementController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\KitchenController;
 use App\Http\Controllers\CashierController;
+use App\Http\Controllers\websiteController;
 
 //スタート画面
 Route::get('/', [StartUpController::class, 'index'])->name('startup');
@@ -30,4 +31,4 @@ Route::get('/kitchen', [KitchenController::class, 'index'])->name('kitchen');
 Route::get('/cashier', [CashierController::class, 'index'])->name('cashier');
 
 //webサイト
-
+Route::get('/cafelamp', [websiteController::class, 'index'])->('cafelamp');

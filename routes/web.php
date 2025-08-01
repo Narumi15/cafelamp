@@ -31,4 +31,4 @@ Route::get('/kitchen', [KitchenController::class, 'index'])->name('kitchen');
 Route::get('/cashier', [CashierController::class, 'index'])->name('cashier');
 
 //webサイト
-Route::get('/', [websiteController::class, 'index'])->('cafelamp');
+Route::get('/', [websiteController::class, 'index'])->name('cafelamp');
